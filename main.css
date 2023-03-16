@@ -1,0 +1,800 @@
+/*Setting the root font size*/
+html {
+  font-size: 16 px;
+}
+body {
+  margin: auto;
+  font-family: "Rubik", sans-serif;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #611e0e;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color: #c4646a;
+}
+
+p {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #611e0e;
+}
+
+#about,
+#skills,
+#projects,
+#contact-form,
+#footer {
+  padding: 2% 5%;
+  text-align: center;
+  border-top: 2px #611e0e dotted;
+}
+
+#submit,
+.hero-btn {
+  padding: 1rem 2rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.3rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  color: #611e0e;
+}
+
+/*----------NAVIGATION BAR----------*/
+/*Applying grid style to #navbar*/
+#navbar {
+  z-index: 2; /*Overlay on top of other sections*/
+  border-bottom: 2px #611e0e dotted;
+  position: fixed; /*Fix navigation bar at the top*/
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  background-color: #e67c83;
+}
+/*Display the <ul> containing links as column 1/2 of the grid*/
+.navlist {
+  list-style: none;
+  padding-left: 0;
+}
+.nav-item,
+.navlink {
+  display: inline-block;
+}
+.navlink {
+  text-decoration: none;
+  padding: 0.2rem 1.5rem;
+  font-size: 1.3rem;
+  color: #611e0e;
+}
+.navlink:hover {
+  color: #fad3b9;
+  text-decoration: none;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+/*Display the dark mode container as column 2/2 of the grid*/
+
+.burger-icon {
+  font-size: 2rem !important;
+  color: #611e0e;
+}
+/*Burger icon (only appears in tablet and mobile size*/
+
+/*----------HERO SECTION----------*/
+/*Setting the height of the section to the height of the viewport*/
+#hero {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fad3b9;
+}
+/*Applying grid style to container*/
+.hero-container {
+  margin: 10% 5%;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+/*Set the text and buttons as column 1/2*/
+.hero-text {
+  grid-column: 1;
+  margin-top: 15%;
+}
+/*Set the image as column 2/2*/
+.hero-img {
+  grid-column: 2;
+  height: 60%;
+}
+/*Style the buttons in their default state*/
+.hbtn-1,
+#submit {
+  background-color: #e67c83;
+  color: #611e0e;
+  border: 2px solid #611e0e;
+}
+.hbtn-2 {
+  background-color: #fff3eb;
+  color: #c4646a;
+  border: 2px solid #c4646a;
+}
+/*Style the buttons in their hover state*/
+.hbtn-1:hover,
+.hbtn-2:hover,
+#submit:hover {
+  background-color: #611e0e;
+  color: #fff3eb;
+  border: 2px solid #fff3eb;
+}
+/*----------SKILLS SECTION----------*/
+#skills {
+  background-color: #fff3eb;
+  padding-bottom: 5%;
+}
+/*Apply grid style to skills container, 4 columns*/
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(1fr, 4);
+  padding-top: 2%;
+}
+.skill-1 {
+  grid-column: 1;
+}
+.skill-2 {
+  grid-column: 2;
+}
+.skill-3 {
+  grid-column: 3;
+}
+.skill-4 {
+  grid-column: 4;
+}
+.skill-icon {
+  display: block;
+  font-size: 4rem !important;
+}
+.skill-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/*----------PROJECTS SECTION----------*/
+#projects {
+  text-align: center;
+}
+/*Apply grid style to container (3 columns)*/
+.project-container {
+  width: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1fr, 3);
+}
+/*Set general image properties*/
+.project-img {
+  height: 500px;
+  width: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  place-self: center;
+}
+.project-1 {
+  grid-column: 1;
+  background-image: url(/images/img2.jpg);
+}
+.project-2 {
+  grid-column: 2;
+  background-image: url(/images/img1.jpg);
+}
+.project-3 {
+  grid-column: 3;
+  background-image: url(/images/img3.jpg);
+}
+/*----------CONTACT----------*/
+#contact-form {
+  background-color: #fad3b9;
+}
+/*Align and style all the labels*/
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 38%;
+  margin-top: 3%;
+  padding: 0 2% 0 0;
+  font-size: 1.3rem;
+  color: #c4646a;
+  font-weight: 700;
+  vertical-align: top;
+}
+/*Align and style all the input fields*/
+.answer {
+  display: inline-block;
+  text-align: left;
+  margin-top: 3%;
+  padding: 0 2%;
+  width: 50%;
+  font-size: 1.2rem;
+  vertical-align: top;
+}
+::placeholder {
+  color: #d8cbbb;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-field,
+.msg {
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+}
+.input-field {
+  height: 25px;
+  width: 300px;
+  padding: 0 2%;
+}
+.msg {
+  width: 300px;
+  height: 150px;
+  padding: 1% 2%;
+}
+/*Styling required fields in default and hover states*/
+.required {
+  border-left: #e67c83 solid 2px;
+}
+.required:valid {
+  border-left: #46b399 solid 2px;
+}
+/*Button hover effect properties have been previously set*/
+#submit {
+  display: block;
+  text-align: left;
+  margin: 3% auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*----------FOOTER----------*/
+#footer {
+  background-color: #e67c83;
+  color: #611e0e;
+  padding-top: 3%;
+}
+.social-link {
+  margin: 2rem;
+  text-decoration: none !important;
+}
+
+.footer-icon {
+  height: 40px;
+}
+.copyright {
+  margin-top: 1rem !important;
+}
+/*----------------RESPONSIVE DESIGN: Media Queries----------*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 500px) {
+  p {
+    font-size: 1.3rem;
+  }
+  /*Navbar*/
+  #navbar {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  .nav-item {
+    display: block;
+  }
+  .navlist {
+    grid-column: 1;
+  }
+  .burger-icon-container {
+    grid-column: 2;
+    align-self: start;
+    justify-self: center;
+    padding-top: 10%;
+  }
+  .menu-collapse {
+    display: none;
+  }
+  /*Hero*/
+  /*Applying grid style to container*/
+  #hero {
+    margin: auto;
+  }
+  .hero-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+  /*Set the text and buttons as column 1/2*/
+  .hero-text {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .hero-description {
+    font-size: 1.7rem;
+  }
+  /*Set the image as column 2/2*/
+  .hero-img {
+    grid-column: 1;
+    grid-row: 2;
+    height: 40%;
+    justify-self: center;
+  }
+  /*About*/
+  .about-text {
+    text-align: left;
+  }
+  /*Skills*/
+  .skills-container {
+    display: block;
+    padding-top: 2%;
+  }
+  .skill-1,
+  .skill-2,
+  .skill-3,
+  .skill-4 {
+    display: block;
+  }
+  .skill-icon {
+    display: block;
+  }
+  .skill-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  /*Projects*/
+  #projects {
+    text-align: center;
+  }
+  .project-container {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  /*Set general image properties*/
+  .project-img {
+    display: block;
+    margin: 10% auto;
+    height: 300px;
+    width: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .project-1 {
+    background-image: url(/images/img2.jpg);
+  }
+  .project-2 {
+    background-image: url(/images/img1.jpg);
+  }
+  .project-3 {
+    background-image: url(/images/img3.jpg);
+  }
+  /*Form*/
+  .label,
+  .answer {
+    display: block;
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+  /*Navbar*/
+  #navbar {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  .nav-item {
+    display: block;
+  }
+  .navlist {
+    grid-column: 1;
+  }
+  .burger-icon-container {
+    grid-column: 2;
+    align-self: start;
+    justify-self: center;
+    padding-top: 10%;
+  }
+  .menu-collapse {
+    display: none;
+  }
+  /*Hero*/
+  /*Applying grid style to container*/
+  #hero {
+    margin: auto;
+  }
+  .hero-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+  /*Set the text and buttons as column 1/2*/
+  .hero-text {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 3%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .hero-description {
+    font-size: 1.7rem;
+    margin: 0 auto;
+  }
+  /*Set the image as column 2/2*/
+  .hero-img {
+    grid-column: 1;
+    grid-row: 2;
+    height: 40%;
+    justify-self: center;
+  }
+  /*About*/
+  .about-text {
+    text-align: left;
+  }
+  /*Skills*/
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 2%;
+  }
+
+  .skill-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .skill-2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .skill-3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .skill-4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .skill-icon {
+    display: block;
+  }
+  .skill-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  /*Projects*/
+  #projects {
+    text-align: center;
+  }
+  .project-container {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+  /*Set general image properties*/
+  .project-img {
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .project-1 {
+    background-image: url(/images/img2.jpg);
+  }
+  .project-2 {
+    background-image: url(/images/img1.jpg);
+  }
+  .project-3 {
+    background-image: url(/images/img3.jpg);
+  }
+  /*Form*/
+  #contact-form {
+    padding-bottom: 5%;
+  }
+  .label,
+  .answer {
+    display: inline-block;
+  }
+  .label {
+    text-align: right;
+    width: 20%;
+  }
+  .answer {
+    text-align: left;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .menu-collapse {
+    display: none;
+  }
+  #navbar {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  .navlist {
+    grid-column: 1;
+  }
+  .nav-item {
+    display: inline-block;
+  }
+  .burger-icon-container {
+    display: none;
+  }
+  /*Hero*/
+  /*Applying grid style to container*/
+  #hero {
+    margin: auto;
+  }
+  .hero-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+  /*Set the text and buttons as column 1/2*/
+  .hero-text {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .hero-description {
+    font-size: 1.7rem;
+    margin: 0 auto;
+  }
+  /*Set the image as column 2/2*/
+  .hero-img {
+    grid-column: 1;
+    grid-row: 2;
+    height: 40%;
+    justify-self: center;
+  }
+  /*About*/
+  .about-text {
+    text-align: left;
+  }
+  /*Skills*/
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 2%;
+  }
+
+  .skill-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .skill-2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .skill-3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .skill-4 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .skill-icon {
+    display: block;
+  }
+  .skill-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  /*Projects*/
+  #projects {
+    text-align: center;
+  }
+  .project-container {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+      "project1 project2"
+      "oddproject oddproject";
+  }
+  /*Set general image properties*/
+  .project-img {
+    margin: 5% auto;
+    height: 300px;
+    width: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .project-1 {
+    background-image: url(/images/img2.jpg);
+    grid-area: project1;
+  }
+  .project-2 {
+    background-image: url(/images/img1.jpg);
+    grid-area: project2;
+  }
+  .project-3 {
+    background-image: url(/images/img3.jpg);
+    grid-area: oddproject;
+  }
+  /*Form*/
+  #contact-form {
+    padding-bottom: 5%;
+  }
+  .label,
+  .answer {
+    display: inline-block;
+  }
+  .label {
+    text-align: right;
+    width: 20%;
+  }
+  .answer {
+    text-align: left;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .menu-collapse {
+    display: none;
+  }
+  #navbar {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  .navlist {
+    grid-column: 1;
+  }
+  .nav-item {
+    display: inline-block;
+  }
+  .burger-icon-container {
+    display: none;
+  }
+  /*Hero*/
+  /*Applying grid style to container*/
+  #hero {
+    margin: auto;
+  }
+  .hero-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  /*Set the text and buttons as column 1/2*/
+  .hero-text {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  .hero-description {
+    font-size: 2rem;
+    margin-bottom: 3%;
+  }
+  /*Set the image as column 2/2*/
+  .hero-img {
+    grid-column: 2;
+    grid-row: 1;
+    height: 60%;
+    justify-self: center;
+  }
+  /*About*/
+  .about-text {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  /*Skills*/
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 2%;
+  }
+
+  .skill-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .skill-2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .skill-3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .skill-4 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .skill-icon {
+    display: block;
+  }
+  .skill-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  /*Projects*/
+  #projects {
+    text-align: center;
+  }
+  .project-container {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: 1fr;
+  }
+  /*Set general image properties*/
+  .project-img {
+    margin: 5% auto;
+    height: 400px;
+    width: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .project-1 {
+    background-image: url(/images/img2.jpg);
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .project-2 {
+    background-image: url(/images/img1.jpg);
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .project-3 {
+    background-image: url(/images/img3.jpg);
+    grid-column: 3;
+    grid-row: 1;
+  }
+  /*Form*/
+  #contact-form {
+    padding-bottom: 2%;
+  }
+  .label,
+  .answer {
+    display: inline-block;
+    margin-top: 2%;
+  }
+  .label {
+    text-align: right;
+    width: 30%;
+  }
+  .answer {
+    text-align: left;
+  }
+}
